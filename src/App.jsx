@@ -5,6 +5,7 @@ import { Navbar } from './components/Navbar';
 import { Sec1 } from './components/Sec1';
 import { Sec2 } from './components/Sec2';
 import { Sec3 } from './components/Sec3';
+import { NewClass } from './components/NewClass';
 
 function App() {
 let heading1 = <h2>Lorem ipsum dolor sit. h1</h2>
@@ -32,6 +33,8 @@ let img3 = <img src="https://img.freepik.com/premium-psd/3d-web-development-soft
 
   return (
     <>
+  <NewClass></NewClass>
+
    <Sec3 title ={"logo"}/>
    {/* <Sec3/> */}
 
@@ -42,7 +45,6 @@ let img3 = <img src="https://img.freepik.com/premium-psd/3d-web-development-soft
    <Sec1 sec1h={heading2} btn={'bnt 2'} para={para2} sec1IMG={img2}/>
    <Sec1 sec1h={heading3} btn={'bnt 3'} para={para3} sec1IMG={img3}/>
    <Sec2/>
-  
 
  
 
