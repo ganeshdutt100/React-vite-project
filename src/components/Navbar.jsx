@@ -1,6 +1,8 @@
+/* eslint-disable react/prop-types */
 
+import PropTypes from 'prop-types';
 
-export const Navbar = () => {
+export const Navbar = (props) => {
   return (
     <div>
 
@@ -18,7 +20,7 @@ export const Navbar = () => {
           <a className="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Link</a>
+          <a className="nav-link" href="#">{props.about}</a>
         </li>
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -45,4 +47,7 @@ export const Navbar = () => {
 
     </div>
   )
+}
+Navbar.propTypes ={
+  about : PropTypes.string.isRequired,
 }
